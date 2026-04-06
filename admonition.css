@@ -1,0 +1,99 @@
+/* ANCHOR Admonition fix  */
+:is(.content > .blocks-container) .ls-block[data-refs-self*='admon-'][haschild] .block-body {
+    margin-bottom: 0 !important;
+    /* padding-bottom: 0 !important; */
+    border-radius: 0 !important;
+}
+
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children {
+    margin-bottom: 10px;
+}
+
+/* Background fix */
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children>.ls-block>.flex {
+    border-left: 0;
+    background-color: transparent !important;
+}
+
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container::before {
+    content: "";
+    border-left: solid 4px;
+    position: absolute;
+    left: 15px;
+    /* 17px(margin-left) - 4px(border-width) / 2 */
+    right: 8px;
+    /* same as margin-right of context block */
+    height: 100%;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: var(--cl-box-shadow);
+    background-color: var(--ls-secondary-background-color);
+}
+
+[data-refs-self*="admon-lists"]>.block-children-container::before {
+    border-color: rgb(124, 77, 255) !important;
+}
+
+[data-refs-self*="admon-tips"]>.block-children-container::before {
+    border-color: rgb(0, 191, 165) !important;
+}
+
+[data-refs-self*="admon-warning"]>.block-children-container::before {
+    border-color: rgb(255, 145, 0) !important;
+}
+
+[data-refs-self*="admon-info"]>.block-children-container::before {
+    border-color: rgb(0, 184, 212) !important;
+}
+
+[data-refs-self*="admon-success"]>.block-children-container::before {
+    border-color: rgb(0, 200, 83) !important;
+}
+
+[data-refs-self*="admon-failure"]>.block-children-container::before {
+    border-color: rgb(255, 82, 82) !important;
+}
+
+[data-refs-self*="admon-danger"]>.block-children-container::before {
+    border-color: rgb(255, 23, 68) !important;
+}
+
+[data-refs-self*="admon-bug"]>.block-children-container::before {
+    border-color: rgb(245, 0, 87) !important;
+}
+
+[data-refs-self*="admon-quote"]>.block-children-container::before {
+    border-color: rgb(158, 158, 158) !important;
+}
+
+[data-refs-self*="admon-question"]>.block-children-container::before {
+    border-color: rgb(100, 221, 23) !important;
+}
+
+/* Bullet threading fix */
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children>.ls-block>div>div.items-center::before {
+    left: calc(var(--ls-block-bullet-threading-width) * -1 - 17px);
+}
+
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children>.ls-block[haschild]>div>.block-content-wrapper::before {
+    left: calc(-15px + 8px);
+}
+
+/* Move grandchildren-container lefter */
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children>div[haschild]>.block-children-container {
+    padding-left: 17px;
+}
+
+/* Dummy border */
+:is(.content > .blocks-container) .ls-block[data-refs-self*="admon-"]>.block-children-container>.block-children {
+    border-color: transparent;
+}
+
+/* .ls-block[data-refs-self*='admon-'] * {
+    --ls-block-bullet-threading-width: 0;
+  } */
+
+/* .ls-block[data-refs-self*='admon-'] > .flex:first-child,
+  .ls-block[data-refs-self*='admon-'] > .flex:first-child > .flex:first-child {
+    --ls-block-bullet-threading-width: 2px;
+  } */

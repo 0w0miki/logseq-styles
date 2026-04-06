@@ -1,0 +1,37 @@
+/* ANCHOR column layout */
+a.tag[data-ref^=".v-columns-"] {
+    font-size: 0;
+}
+
+a.tag[data-ref^=".v-columns-"]::before {
+    font-size: 1rem;
+}
+
+a.tag[data-ref^=".v-columns-3"]::before {
+    content: "Ⅲ";
+}
+
+a.tag[data-ref^=".v-columns-2"]::before {
+    content: "Ⅱ";
+}
+
+[data-refs-self*=".v-columns"]>.block-children-container>.block-children {
+    display: grid;
+}
+
+[data-refs-self*=".v-columns"]>.block-children-container>.block-children .ls-block {
+    width: 100%;
+}
+
+[data-refs-self*='".v-columns-3"']>.block-children-container>.block-children {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+[data-refs-self*='".v-columns-2"']>.block-children-container>.block-children {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ANCHOR Kanban layout */
+[data-refs-self*='kanban']>.block-children-container>.block-children>.ls-block {
+    min-width: 20vw;
+}

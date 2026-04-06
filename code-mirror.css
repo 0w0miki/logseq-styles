@@ -1,0 +1,136 @@
+/* ANCHOR: Style for CodeMirror */
+html[data-theme="dark"] .CodeMirror {
+    font-family: "FiraCode Nerd Font", "Fire Code", monospace;
+    line-height: 1.2;
+    background: var(--yuki-background);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: var(--white);
+}
+
+html[data-theme="dark"] .cm-s-default .CodeMirror,
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
+    background-color: transparent;
+    color: var(--white) !important;
+    border: none;
+}
+
+html[data-theme="dark"] .CodeMirror {
+    border: 5px solid var(--yuki-light-background);
+}
+
+html[data-theme="dark"] .extensions__code-lang {
+    background: var(--yuki-light-background);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
+    color: var(--yuki-background);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-cursor {
+    border-left: solid thin var(--white);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-linenumber {
+    color: var(--comment);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-line {
+    box-shadow: none;
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line>span::selection,
+html[data-theme="dark"] .cm-s-default .CodeMirror-line>span>span::selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line>span::-moz-selection,
+html[data-theme="dark"] .cm-s-default .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-comment {
+    color: var(--stone);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-string,
+html[data-theme="dark"] .CodeMirror span.cm-string-2 {
+    color: var(--sage);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-number {
+    color: var(--chalky);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-variable {
+    color: var(--malibu);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-variable-2 {
+    color: var(--whiskey);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-def {
+    color: var(--ivory);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-operator {
+    color: var(--cyan);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-keyword {
+    color: var(--violet);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-atom {
+    color: var(--whiskey);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-meta {
+    color: var(--stone);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-property {
+    color: var(--coral);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-variable-3,
+html[data-theme="dark"] .CodeMirror span.cm-type {
+    color: var(--chalky);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-tag {
+    color: var(--pink);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-attribute {
+    color: var(--green);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-qualifier {
+    color: var(--green);
+}
+
+html[data-theme="dark"] .CodeMirror span.cm-builtin {
+    color: var(--green);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: var(--chalky) !important;
+    outline: 1px solid var(--ivory) !important;
+}
+
+html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
+    background: transparent;
+}

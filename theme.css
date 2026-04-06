@@ -1,0 +1,248 @@
+:root {
+  --selection: #43475a;
+  --yuki-foreground: var(--white);
+  --yuki-background: #282a36;
+  --yuki-light-background: #343746;
+  --yuki-lighter-background: #424450;
+  --dark-background: #21222c;
+  --darker-background: #191a21;
+  --current-line: #44475a;
+  --comment: #6272a4;
+  --white: #f8f8f2;
+  --white-hover: #f8f8f280;
+  --red: #ff5555;
+  --orange-hover: #b26859;
+  --orange: #ffb86c;
+  --yellow: #f1fa8c;
+  --green: #50fa7b;
+  --purple: #bd93f9;
+  --purple-hover: #bf93f980;
+  --cyan: #8be9fd;
+  --cyan-hover: #8be9fd80;
+  --pink: #ff79c6;
+  --pink-hover: #ff79c680;
+
+  --chalky: #e5c07b;
+  --coral: #e06c75;
+  --invalid: #ffffff;
+  --ivory: #abb2bf;
+  --stone: #7d8799;
+  --malibu: #61afef;
+  --sage: #98c379;
+  --whiskey: #d19a66;
+  --violet: #c678dd;
+  --darkBackground: #21252b;
+  --highlightBackground: #2c313a;
+  --yuki-background: #282c34;
+  --tooltipBackground: #353a42;
+
+  --ls-tag-text-opacity: 0.8;
+  --ls-tag-text-hover-opacity: 0.8;
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 36px;
+  --ls-font-family: "Fira Sans";
+  --ls-font-weight: 300;
+  --ls-font-letter-spacing: 0.002em;
+  --ls-font-line-height: 1.5;
+
+  --ls-border-radius-low: 3px;
+  --ls-border-radius-medium: 6px;
+
+  --ls-block-bullet-active-color: var(--orange);
+  --ls-block-bullet-threading-width: 2px;
+}
+
+.dark-theme,
+html[data-theme="dark"] {
+  --ls-primary-background-color: var(--yuki-background);
+  --ls-secondary-background-color: var(--dark-background);
+  --ls-tertiary-background-color: var(--yuki-light-background);
+  --ls-quaternary-background-color: var(--yuki-light-background);
+  --ls-quinary-background-color: var(--darker-background);
+
+  --ls-active-primary-color: var(--yuki-foreground);
+  --ls-active-secondary-color: var(--yuki-foreground);
+
+  --ls-document-text-color: var(--yuki-foreground);
+  --ls-primary-text-color: var(--yuki-foreground);
+  --ls-secondary-text-color: var(--white-hover);
+
+  --ls-search-background-color: var(--yuki-background);
+  --ls-border-color: var(--comment);
+  --ls-secondary-border-color: var(--ls-border-color);
+  --ls-menu-hover-color: var(--yuki-light-background);
+  --ls-table-tr-even-background-color: var(--yuki-light-background);
+
+  --ls-head-text-color: var(--yuki-foreground);
+  --ls-title-text-color: var(--yuki-foreground);
+
+  --ls-link-text-color: var(--orange);
+  --ls-link-text-hover-color: var(--orange-hover);
+
+  --ls-link-ref-text-color: var(--orange);
+  --ls-link-ref-text-hover-color: var(--orange-hover);
+  --ls-block-ref-link-text-color: var(--ls-border-color);
+
+  --ls-tag-text-color: var(--purple);
+  --ls-tag-text-hover-color: var(--purple-hover);
+  --ls-tag-background-color: var(--purple);
+  --ls-tag-background-hover-color: var(--purple-hover);
+
+  --ls-block-bullet-border-color: var(--current-line);
+  --ls-block-bullet-color: var(--yuki-foreground);
+  --ls-block-highlight-color: var(--current-line);
+  --ls-block-properties-background-color: var(--yuki-light-background);
+
+  --ls-page-checkbox-color: transparent;
+  --ls-page-checkbox-border-color: var(--comment);
+
+  --ls-page-blockquote-color: var(--yuki-foreground);
+  --ls-page-blockquote-bg-color: var(--yuki-light-background);
+  --ls-page-blockquote-border-color: var(--yellow);
+  --ls-page-properties-background-color: var(--yuki-light-background);
+
+  --ls-page-inline-code-color: var(--orange);
+  --ls-page-inline-code-bg-color: var(--yuki-background);
+
+  --ls-scrollbar-background-color: var(--yuki-background);
+  --ls-scrollbar-foreground-color: var(--darker-background);
+  --ls-scrollbar-thumb-hover-color: var(--yuki-light-background);
+
+  --ls-icon-color: var(--white-hover);
+  --ls-search-icon-color: var(--white-hover);
+  --ls-a-chosen-bg: var(--yuki-light-background);
+  --ls-right-sidebar-code-bg-color: var(--yuki-light-background);
+  --ls-selection-background-color: var(--comment);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-guideline-color: var(--ls-border-color);
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-primary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: var(--ls-tertiary-background-color);
+  --color-level-5: var(--ls-quinary-background-color);
+}
+
+html,
+body {
+  font-weight: var(--ls-font-weight);
+  letter-spacing: var(--ls-font-letter-spacing);
+  line-height: var(--ls-font-line-height);
+  font-size: var(--ls-page-text-size);
+  background-color: #282a36;
+}
+
+html[data-theme="dark"] i,
+html[data-theme="dark"] a.button,
+html[data-theme="dark"] .ui__icon {
+  color: var(--yellow);
+}
+
+b {
+  color: var(--red);
+  font-weight: bold;
+}
+
+mark {
+  background-color: var(--yellow);
+}
+
+.bg-orange-400 {
+  background-color: var(--orange);
+}
+
+.bg-green-600 {
+  background-color: var(--green);
+}
+
+.bg-red-500 {
+  background-color: var(--red);
+}
+
+.form-checkbox {
+  border: 1px solid var(--ls-page-checkbox-border-color) !important;
+  border-radius: var(--ls-border-radius-low);
+}
+
+.external-link {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.external-link:hover {
+  color: var(--cyan-hover);
+}
+
+h1.title,
+.ls-block :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 400;
+}
+
+/* ANCHOR Priority tag styling */
+.priority {
+  color: var(--ls-tag-text-color);
+  opacity: 1 !important;
+  font-size: 0px;
+  /* Hide text */
+}
+
+.priority:hover,
+a.tooltip-priority:hover {
+  color: var(--ls-tag-text-hover-color);
+  opacity: 0.5;
+}
+
+a.priority[href="#/page/A"]:before {
+  content: "A";
+  background: var(--red);
+}
+
+a.priority[href="#/page/B"]:before {
+  content: "B";
+  background: var(--yellow);
+}
+
+a.priority[href="#/page/C"]:before {
+  content: "C";
+  background: var(--green);
+}
+
+a.priority:before {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1px 4px 0px 3px;
+  margin: 0px 2px 0px 0px;
+  border-radius: var(--ls-border-radius-low);
+  color: var(--ls-primary-background-color);
+}
+
+a.tooltip-priority {
+  color: var(--ls-tag-text-color);
+}
+
+.Tooltip__label {
+  background: var(--ls-quinary-background-color);
+}
+
+.Tooltip__label::after {
+  border-bottom-color: var(--ls-quinary-background-color);
+}
+
+.page-reference .bracket {
+  color: var(--ls-border-color);
+  opacity: 0.8;
+}
+
+.content a.tag {
+  padding: 0px 7px;
+  border-radius: 10px;
+  margin: 2px 0px;
+  color: var(--dark-background);
+  background-color: var(--purple);
+  font-weight: 400;
+}
+
+.content a.tag:hover {
+  background: var(--purple-hover);
+  color: var(--purple);
+}
