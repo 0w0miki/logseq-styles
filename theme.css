@@ -1,5 +1,15 @@
 :root {
   /* ---------- Palette anchors ---------- */
+  --chalky: #e5c07b;
+  --coral: #e06c75;
+  --invalid: #ffffff;
+  --ivory: #abb2bf;
+  --stone: #7d8799;
+  --malibu: #61afef;
+  --sage: #98c379;
+  --whiskey: #d19a66;
+  --violet: #c678dd;
+
   --ls-tag-text-opacity: 0.8;
   --ls-tag-text-hover-opacity: 0.8;
   --ls-page-text-size: 16px;
@@ -41,16 +51,6 @@ html[data-theme="dark"] {
   --pink: #ff79c6;
   --pink-hover: #ff79c680;
 
-  --chalky: #e5c07b;
-  --coral: #e06c75;
-  --invalid: #ffffff;
-  --ivory: #abb2bf;
-  --stone: #7d8799;
-  --malibu: #61afef;
-  --sage: #98c379;
-  --whiskey: #d19a66;
-  --violet: #c678dd;
-
   --yuki-bold: var(--red);
   --yuki-italic: var(--yuki-dark-fg-2);
   --yuki-block-focus-handler: #5eead4;
@@ -65,17 +65,16 @@ html[data-theme="dark"] {
 
   --ls-active-primary-color: var(--yuki-dark-fg-1);
   --ls-active-secondary-color: var(--yuki-dark-fg-1);
-
-  /* ---------- Text ---------- */
-  --ls-document-text-color: var(--yuki-dark-fg-1);
-  --ls-primary-text-color: var(--yuki-dark-fg-1);
-  --ls-secondary-text-color: var(--white-hover);
-
   --ls-search-background-color: var(--yuki-dark-bg-1);
   --ls-border-color: var(--comment);
   --ls-secondary-border-color: var(--ls-border-color);
   --ls-menu-hover-color: var(--yuki-dark-bg-2);
   --ls-table-tr-even-background-color: var(--yuki-dark-bg-2);
+
+  /* ---------- Text ---------- */
+  --ls-document-text-color: var(--yuki-dark-fg-1);
+  --ls-primary-text-color: var(--yuki-dark-fg-1);
+  --ls-secondary-text-color: var(--white-hover);
 
   --ls-head-text-color: var(--yuki-dark-fg-1);
   --ls-title-text-color: var(--yuki-dark-fg-1);
@@ -245,9 +244,22 @@ mark {
   color: var(--cyan-hover);
 }
 
+/* Headings */
 h1.title,
-.ls-block :is(h1, h2, h3, h4, h5, h6) {
+.ls-block :is(h1, h2, h3) {
   font-weight: 400;
+}
+.ls-block h4 {
+  color: var(--whiskey);
+  font-weight: 500;
+}
+.ls-block h5 {
+  color: var(--malibu);
+  font-weight: 500;
+}
+.ls-block h6 {
+  color: var(--violet);
+  font-weight: 500;
 }
 
 .Tooltip__label {
