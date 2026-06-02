@@ -190,11 +190,6 @@ body {
 }
 
 
-html[data-theme="dark"] a.button,
-html[data-theme="dark"] .ui__icon {
-  color: var(--yellow);
-}
-
 i {
   color: var(--yuki-italic);
 }
