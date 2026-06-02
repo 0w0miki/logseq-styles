@@ -142,6 +142,7 @@ html[data-theme='light'],
   --cyan-hover: #30bfde80;
   --red: #FF6B6B;
   --red-hover: #FF6B6B70;
+  --orange: #ff840a;
 
   --yuki-bold: #15803D;
   --yuki-italic: #6B7280;
@@ -179,6 +180,9 @@ html[data-theme='light'],
   --ls-tag-text-hover-color: var(--red-hover);
   --ls-tag-background-color: var(--red);
   --ls-tag-background-hover-color: var(--red-hover);
+
+  /* ---------- Inline code ---------- */
+  --ls-page-inline-code-color: var(--orange);
 }
 
 html,
