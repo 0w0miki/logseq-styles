@@ -53,6 +53,8 @@ html[data-theme="dark"] {
 
   --yuki-bold: var(--red);
   --yuki-italic: var(--yuki-dark-fg-2);
+  --yuki-block-focus-handler: #5eead4;
+  --yuki-block-focus-bg: #5eead424;
 
   /* ---------- Logseq surface tokens ---------- */
   --ls-primary-background-color: var(--yuki-dark-bg-1);
@@ -146,6 +148,8 @@ html[data-theme='light'],
 
   --yuki-bold: #15803D;
   --yuki-italic: #6B7280;
+  --yuki-block-focus-handler: #5195c6;
+  --yuki-block-focus-bg: #5195c605;
 
   --ls-primary-background-color: #F5F7FA;
   /* Cloud Dancer */
@@ -205,6 +209,13 @@ b {
 
 mark {
   background-color: var(--yellow);
+}
+
+/* Block selection / focus */
+.ls-block.selected,
+.block-content-wrapper.selected {
+  background: var(--yuki-block-focus-bg);
+  box-shadow: inset 2px 0 0 var(--yuki-block-focus-handler);
 }
 
 .bg-orange-400 {
