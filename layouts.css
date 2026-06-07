@@ -15,6 +15,38 @@ a.tag[data-ref^=".v-columns-2"]::before {
     content: "Ⅱ";
 }
 
+/* For DB graph */
+/* The parent container that has v-column- tag */
+.ls-block[haschild="true"]:has(
+  > .block-main-container .tag[data-ref^=".v-columns-"]
+)
+/* The children container */
+>.block-children-container>.block-children>.blocks-list-wrap {
+    display: grid;
+}
+
+.ls-block[haschild="true"]:has(
+  > .block-main-container .tag[data-ref^=".v-columns-"]
+)
+>.block-children-container>.block-children .ls-block {
+    width: 100%;
+}
+
+.ls-block[haschild="true"]:has(
+  > .block-main-container .tag[data-ref=".v-columns-3"]
+)
+>.block-children-container>.block-children>.blocks-list-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ls-block[haschild="true"]:has(
+  > .block-main-container .tag[data-ref^=".v-columns-"]
+)
+>.block-children-container>.block-children>.blocks-list-wrap {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* For MD Graph */
 [data-refs-self*=".v-columns"]>.block-children-container>.block-children {
     display: grid;
 }
