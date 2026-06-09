@@ -117,6 +117,12 @@
   position: absolute;
   border-left: var(--ls-block-bullet-threading-width) solid transparent;
 }
+/* Quote block has 0.5rem margin and 16px padding */
+.ls-block[haschild] > .block-main-container > div div[data-node-type=quote] .block-content-wrapper::before {
+  left: calc(-13px - 4px - 16px);
+  top: -0.5rem;
+  height: calc(100% + 1rem);
+}
 .ls-block[haschild]:focus-within > .block-main-container > div > .block-content-wrapper::before {
   border-color: var(--ls-block-bullet-active-color);
 }
