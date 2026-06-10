@@ -138,12 +138,13 @@ html[data-theme="dark"] {
 html[data-theme='light'],
 .white-theme,
 .light-theme {
-  --green: #15803D;
+  --green: #4fba76;
   --cyan: #30bfde;
   --cyan-hover: #30bfde80;
   --red: #FF6B6B;
   --red-hover: #FF6B6B70;
   --orange: #ff840a;
+  --purple: #bd93f9;
 
   --yuki-bold: #15803D;
   --yuki-italic: #6B7280;
