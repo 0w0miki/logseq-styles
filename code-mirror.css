@@ -8,6 +8,10 @@ html[data-theme="dark"] .CodeMirror {
     color: var(--white);
 }
 
+.CodeMirror-scroll {
+    margin-right: 0;
+}
+
 html[data-theme="dark"] .cm-s-default .CodeMirror,
 html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
     background-color: transparent;
